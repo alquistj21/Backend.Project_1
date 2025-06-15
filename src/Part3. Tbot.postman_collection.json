@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "1fb0f08a-66f6-4cbe-bb83-69a49ec5a38b",
+		"name": "Tbot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42923023"
+	},
+	"item": [
+		{
+			"name": "bot information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/getMe",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"getMe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My user_id and chat_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/getUpdates",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"getUpdates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bot message Привет!",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "Привет!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/sendMessage?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"sendMessage"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "a picture of yourself on behalf of the bot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/Users/alquistj/Desktop/images222.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/sendPhoto?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attach a pdf document instead of a photo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/Users/alquistj/Downloads/Здравствуйте.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/sendPhoto?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "attach docx file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "/Users/alquistj/Downloads/Bankovskie-rekvizityi-i-yuridicheskiy-adres-OOO-KRANMONTAZHSERVIS.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/sendPhoto?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"sendPhoto"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "My Photo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "getUserProfilePhotos",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/getUserProfilePhotos?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"getUserProfilePhotos"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sending a document pdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"type": "file",
+							"src": "/Users/alquistj/Downloads/Здравствуйте.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/sendDocument?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"sendDocument"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sending a document docx",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "chat_id",
+							"value": "365754154",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"type": "file",
+							"src": "Bankovskie-rekvizityi-i-yuridicheskiy-adres-OOO-KRANMONTAZHSERVIS.docx"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.telegram.org/bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo/sendDocument?user_id=365754154",
+					"protocol": "https",
+					"host": [
+						"api",
+						"telegram",
+						"org"
+					],
+					"path": [
+						"bot7801650583:AAFsI9xyJcfgEA13jV6W6zbxn-pUgRpOUTo",
+						"sendDocument"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "365754154"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "70717adb-3cb1-4c01-995b-d5866a5d1bfd",
+		"name": "API News",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42923023"
+	},
+	"item": [
+		{
+			"name": "Linux News",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "35d2105972d347c69932ad611bc4d91a",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=linux",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "linux"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "“Development” in Russian for the last 15 days",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "35d2105972d347c69932ad611bc4d91a",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=разработка&language=ru&from=2025-02-24",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "разработка"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "from",
+							"value": "2025-02-24"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "linux in Russian on 3 pages with 10 news items on each page",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "35d2105972d347c69932ad611bc4d91a",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=linux&language=ru&page=3&pageSize=10",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "linux"
+						},
+						{
+							"key": "language",
+							"value": "ru"
+						},
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all news headlines for the country of Russia on the topic “science”",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "35d2105972d347c69932ad611bc4d91a",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?country=ru&q=science",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "ru"
+						},
+						{
+							"key": "q",
+							"value": "science"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "35d2105972d347c69932ad611bc4d91a",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
